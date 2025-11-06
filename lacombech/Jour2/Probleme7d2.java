@@ -1,11 +1,8 @@
 package lacombech.Jour2;
 
-import java.util.Scanner;
-
 public class Probleme7d2 {
     public static void main(String[] args) {
         char caractereRecherche = 'A';
-        String y;
         String nom = "compter le nombre de voyelles et de consonnes dans une phrase qui est demande a lecran";
         int compteur = 0, compteur2 = 0;
         for (char i = 'A'; i <= 'Z'; i++) {
@@ -15,15 +12,15 @@ public class Probleme7d2 {
                 if (nom.toUpperCase().charAt(i2) == caractereRecherche) {
                     if (nom.charAt(i2) == 1) {
                         compteur2++;
-                    } else if (nom.charAt(i2) == 5) {
+                    } else if (nom.toLowerCase().charAt(i2) == 'e') {
                         compteur2++;
-                    } else if (nom.charAt(i2) == 9) {
+                    } else if (nom.toLowerCase().charAt(i2) == 'i') {
                         compteur2++;
-                    } else if (nom.charAt(i2) == 15) {
+                    } else if (nom.toLowerCase().charAt(i2) == 'o') {
                         compteur2++;
-                    } else if (nom.charAt(i2) == 21) {
+                    } else if (nom.toLowerCase().charAt(i2) == 'u') {
                         compteur2++;
-                    } else if (nom.charAt(i2) == 25) {
+                    } else if (nom.toLowerCase().charAt(i2) == 'y') {
                         compteur2++;
                     } else {
                         compteur++;
