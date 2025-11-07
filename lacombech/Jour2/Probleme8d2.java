@@ -16,6 +16,7 @@ public class Probleme8d2 {
             mots.add(mot);
         }
 
+        mots.sort(null);
         System.out.println("Premier mot (ordre alphabétique) : " + mots.getFirst());
         System.out.println("Dernier mot (ordre alphabétique) : " + mots.getLast());
 
